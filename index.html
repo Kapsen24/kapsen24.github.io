@@ -11,7 +11,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="/images/Kapsen-logo.jpg" alt="Company Logo">
+        <img src="/images/logo-clear.png" alt="Company Logo">
     </div>
     <div class="search-bar">
         <input type="text" placeholder="Search...">
@@ -20,6 +20,7 @@
         &#9776; <!-- Unicode for the "hamburger" icon -->
     </div>
 </header>
+
 
 <div class="side-panel" id="sidePanel">
     <button class="close-button" onclick="closeSidePanel()">&times;</button>
@@ -37,13 +38,10 @@
 
 <main>
     <div class="main-title-container">
-        <h1>Каталог грузовых шин Kapsen</h1>
+        <h1>Шины грузовые Kapsen</h1>
     </div>
-    <!--    <div class="tire-container">-->
-    <!--        <h2>Шины с камерой</h2>-->
-    <!--    </div>-->
     <div class="title-container">
-        <h2>Шины в комплекте с камерой</h2>
+        <h2>В комплекте с камерой</h2>
     </div>
 
     <div class="tire-container">
@@ -296,7 +294,7 @@
         </div>
     </div>
 
-        <div class="tire-container">
+    <div class="tire-container">
         <div class="tire-box">
             <img src="/images/RS612.png" alt="Tire Image">
             <div class="tire-info">
@@ -309,28 +307,40 @@
         </div>
     </div>
 
+    <!--    <div class="warehouse-container">-->
+    <!--        <div class="title-container">-->
+    <!--            <h2>Где мы находимся?</h2>-->
+    <!--        </div>-->
+    <!--        <div class="warehouse-info">-->
+    <!--            <div class="warehouse-content">-->
+    <!--                <p class="address"><strong>Адрес:</strong> Красноярск, ул. Борисевича, 4К</p>-->
+    <!--                <p class="opening-hours">Часы работы: Your Opening Hours Here</p>-->
+    <!--                <img src="images/warehouse.png" alt="Warehouse Image">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <div class="warehouse-container">
+        <div class="title-container">
+            <h2>Где мы находимся?</h2>
+        </div>
+        <div class="warehouse-info">
+            <!-- Flex container for the image and details -->
+            <div class="warehouse-content">
+                <img src="images/warehouse.png" alt="Warehouse Image 1">
+                <div class="details">
+                    <p class="address"><strong>Адрес:</strong> Красноярск, ул. Борисевича, 4К. Подъезд со стороны
+                        Борисевича 4Б.
+                        <a href="https://go.2gis.com/v5uupq" target="_blank"> (Посмотреть на картe)</a></p>
+                    <p class="opening-hours">пн-пт <strong>09:00 – 18:00</strong></p>
+                    <p><strong>Телефон:</strong> +7-902-940-1743</p>
+                    <p><strong>Email:</strong> vod-2018@bk.ru</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
-
-<!-- Company Information -->
-<div class="company-info">
-    <hr>
-    <div class="company-title">
-        ООО Комфорт Групп
-    </div>
-    <div class="company-details">
-        <div class="company-address">
-            г. Красноярск, ул. Примерная, 123456
-        </div>
-        <div class="company-phone">
-            Телефон: +7-902-940-1743
-        </div>
-        <div class="company-email">
-            Email: vod-2018@bk.ru
-        </div>
-        <!-- Add other company information here -->
-    </div>
-</div>
-
 
 <script src="/js/script.js"></script>
 </body>
