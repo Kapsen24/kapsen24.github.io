@@ -23,4 +23,3 @@ function scrollToSection(sectionId, offset = 70) {
         });
     }
 }
-

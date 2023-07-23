@@ -22,8 +22,8 @@
 <div class="side-panel" id="sidePanel">
     <button class="close-button" onclick="closeSidePanel()">&times;</button>
     <div class="sidebar-content">
+        <h2 onclick="scrollToSection('catalogue')">• Каталог</h2>
         <h2 onclick="scrollToSection('tires-with-cameras')">• Шины с камерами</h2>
-        <h2 onclick="scrollToSection('all-tires')">• Все шины</h2>
         <h2 onclick="scrollToSection('contact')">• Контакты</h2>
     </div>
 </div>
@@ -32,105 +32,10 @@
     <div class="main-title-container">
         <h1>Шины грузовые Kapsen</h1>
     </div>
-    <div id="tires-with-cameras" class="title-container">
-        <h2>В комплекте с камерой</h2>
-    </div>
 
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS103.png" alt="Tire Image">
 
-            <div class="tire-info">
-                <p>• HS103</p>
-                <p>• 295/80/22,5 — 18PR</p>
-                <p>• Ведущая</p>
-                <p>• Индекс нагрузки: 152 / 149L</p>
-                <p>21 500 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS268.png" alt="Tire Image">
-            <div class="tire-info">
-                <p>• HS268</p>
-                <p>• 10.00R20 — 18PR</p>
-                <p>• Ведущая / Рулевая</p>
-                <p>• Индекс нагрузки: 149 / 146K</p>
-                <p>21 200 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS268.png" alt="Tire Image">
-            <div class="tire-info">
-                <p>• HS268</p>
-                <p>• 11.00R20 — 18PR</p>
-                <p>• Ведущая / Рулевая</p>
-                <p>• Индекс нагрузки: 152 / 149K</p>
-                <p>23 900 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS268.png" alt="Tire Image">
-            <div class="tire-info">
-                <p>• HS268</p>
-                <p>• 12.00R20 — 20PR</p>
-                <p>• Ведущая / Рулевая</p>
-                <p>• Индекс нагрузки: 152 / 149K</p>
-                <p>26 700 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS715.png" alt="Tire Image">
-
-            <div class="tire-info">
-                <p>• HS715</p>
-                <p>• 12.00R20 — 20PR</p>
-                <p>• Карьерная</p>
-                <p>• Индекс нагрузки: 156 / 153L</p>
-                <p>31 200 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS918.png" alt="Tire Image">
-            <div class="tire-info">
-                <p>• HS918+</p>
-                <p>• 10.00R20 — 18PR</p>
-                <p>• Ведущая</p>
-                <p>• Индекс нагрузки: 149 / 146K</p>
-                <p>21 700 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tire-container">
-        <div class="tire-box">
-            <img src="../images/HS918.png" alt="Tire Image">
-            <div class="tire-info">
-                <p>• HS918+</p>
-                <p>• 11.00R20 — 18PR</p>
-                <p>• Ведущая</p>
-                <p>• Индекс нагрузки: 156 / 153K</p>
-                <p>25 400 ₽</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="all-tires" class="title-container">
-        <h2>Все шины</h2>
+    <div id="Catalogue" class="title-container">
+        <h2>Каталог</h2>
     </div>
 
     <div class="tire-container">
@@ -296,6 +201,104 @@
             </div>
         </div>
     </div>
+
+    <div id="tires-with-cameras" class="title-container">
+        <h2>В комплекте с камерой</h2>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS103.png" alt="Tire Image">
+
+            <div class="tire-info">
+                <p>• HS103</p>
+                <p>• 295/80/22,5 — 18PR</p>
+                <p>• Ведущая</p>
+                <p>• Индекс нагрузки: 152 / 149L</p>
+                <p>21 500 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS268.png" alt="Tire Image">
+            <div class="tire-info">
+                <p>• HS268</p>
+                <p>• 10.00R20 — 18PR</p>
+                <p>• Ведущая / Рулевая</p>
+                <p>• Индекс нагрузки: 149 / 146K</p>
+                <p>21 200 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS268.png" alt="Tire Image">
+            <div class="tire-info">
+                <p>• HS268</p>
+                <p>• 11.00R20 — 18PR</p>
+                <p>• Ведущая / Рулевая</p>
+                <p>• Индекс нагрузки: 152 / 149K</p>
+                <p>23 900 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS268.png" alt="Tire Image">
+            <div class="tire-info">
+                <p>• HS268</p>
+                <p>• 12.00R20 — 20PR</p>
+                <p>• Ведущая / Рулевая</p>
+                <p>• Индекс нагрузки: 152 / 149K</p>
+                <p>26 700 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS715.png" alt="Tire Image">
+
+            <div class="tire-info">
+                <p>• HS715</p>
+                <p>• 12.00R20 — 20PR</p>
+                <p>• Карьерная</p>
+                <p>• Индекс нагрузки: 156 / 153L</p>
+                <p>31 200 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS918.png" alt="Tire Image">
+            <div class="tire-info">
+                <p>• HS918+</p>
+                <p>• 10.00R20 — 18PR</p>
+                <p>• Ведущая</p>
+                <p>• Индекс нагрузки: 149 / 146K</p>
+                <p>21 700 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tire-container">
+        <div class="tire-box">
+            <img src="../images/HS918.png" alt="Tire Image">
+            <div class="tire-info">
+                <p>• HS918+</p>
+                <p>• 11.00R20 — 18PR</p>
+                <p>• Ведущая</p>
+                <p>• Индекс нагрузки: 156 / 153K</p>
+                <p>25 400 ₽</p>
+            </div>
+        </div>
+    </div>
+<!--    <div class="tire-container"></div>-->
 
     <div id="contact" class="warehouse-container">
         <div class="title-container">

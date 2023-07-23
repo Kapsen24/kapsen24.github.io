@@ -32,7 +32,6 @@ header {
     border-radius: 10px; /* Make the logo image rounded */
 }
 
-
 /* Style the menu button (hamburger icon) */
 .menu-button {
     cursor: pointer;
@@ -79,10 +78,9 @@ header {
 /* Main content styles */
 .main-title-container {
     text-align: center;
-    align-content: center;
     width: 100%;
     padding: 10px 0 10px;
-    margin: 10px 0 20px;
+    margin: 10px 0 10px;
     font-size: 20px;
     color: #000000;
     border: 1px solid #ff3333;
@@ -95,25 +93,73 @@ header {
     align-content: center;
     width: 100%;
     margin-top: 30px;
-    /*padding: 0 0 20px;*/
     padding-bottom: 20px;
     font-size: 20px;
-    /*margin: 20px auto 20px;*/
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 70px auto 20px;
     max-width: 1200px;
     padding: 0 20px;
-    gap: 10px;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Set a maximum width for the tire containers on larger screens */
+@media screen and (min-width: 1024px) {
+    .tire-container {
+        flex-basis: calc(25% - 20px);
+    }
+}
+
+/* Set a maximum width for the tire containers on medium screens */
+@media screen and (max-width: 1023px) {
+    .tire-container {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+/* Set a maximum width for the tire containers on smaller screens */
+@media screen and (max-width: 768px) {
+    .tire-container {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Add a special case for the last row of three tires per line */
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+    main {
+        justify-content: flex-start;
+    }
+
+    .tire-container {
+        flex-basis: calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+    /* Calculate the flex-basis dynamically for the last row of three tires */
+    @supports (gap: 20px) {
+        main {
+            justify-content: space-between;
+        }
+
+        .tire-container:last-child,
+        .tire-container:nth-last-child(2),
+        .tire-container:nth-last-child(3) {
+            flex-basis: calc(33.33% - 26.66px);
+        }
+    }
+}
+
+
+/* Remove the width and flex properties */
 .tire-container {
-    position: relative; /* Add position relative to create a new stacking context */
-    width: 23%;
+    position: relative;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -122,11 +168,25 @@ main {
     border-radius: 10px;
 }
 
+/* Set the container layout for different screen sizes */
+/* For larger screens, display four tires per line */
+@media screen and (min-width: 1024px) {
+    .tire-container:nth-child(4n + 1) {
+        margin-left: 0;
+    }
+}
 
+/* For medium screens, display three tires per line */
+@media screen and (max-width: 1023px) {
+    .tire-container:nth-child(3n + 1) {
+        margin-left: 0;
+    }
+}
+
+/* For smaller screens, display two tires per line */
 @media screen and (max-width: 768px) {
-    /* For mobile devices, display two tires per line */
-    .tire-container {
-        width: 48%;
+    .tire-container:nth-child(2n + 1) {
+        margin-left: 0;
     }
 }
 
@@ -153,7 +213,6 @@ main {
 
 /* Scale the tire image on hover */
 .tire-box:hover img {
-    /*opacity: 0.7;*/
     transform: scale(1.1);
     z-index: 2; /* Make sure the scaled image stays on top of other elements */
 }
