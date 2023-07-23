@@ -13,9 +13,6 @@
     <div class="logo">
         <img src="/images/logo-clear.png" alt="Company Logo">
     </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search...">
-    </div>
     <div class="menu-button" onclick="openSidePanel()">
         &#9776; <!-- Unicode for the "hamburger" icon -->
     </div>
@@ -25,14 +22,9 @@
 <div class="side-panel" id="sidePanel">
     <button class="close-button" onclick="closeSidePanel()">&times;</button>
     <div class="sidebar-content">
-        <h2>шины с камерами</h2>
-        <!-- Add content for this section here -->
-
-        <h2>все шины</h2>
-        <!-- Add content for this section here -->
-
-        <h2>контакты</h2>
-        <!-- Add content for this section here -->
+        <h2 onclick="scrollToSection('tires-with-cameras')">Шины с камерами</h2>
+        <h2 onclick="scrollToSection('all-tires')">Все шины</h2>
+        <h2 onclick="scrollToSection('contact')">Контакты</h2>
     </div>
 </div>
 
@@ -40,7 +32,7 @@
     <div class="main-title-container">
         <h1>Шины грузовые Kapsen</h1>
     </div>
-    <div class="title-container">
+    <div id="tires-with-cameras" class="title-container">
         <h2>В комплекте с камерой</h2>
     </div>
 
@@ -139,7 +131,7 @@
 
     <div class="tire-container"></div>
 
-    <div class="title-container">
+    <div id="all-tires" class="title-container">
         <h2>Все шины</h2>
     </div>
 
@@ -307,41 +299,25 @@
         </div>
     </div>
 
-    <!--    <div class="warehouse-container">-->
-    <!--        <div class="title-container">-->
-    <!--            <h2>Где мы находимся?</h2>-->
-    <!--        </div>-->
-    <!--        <div class="warehouse-info">-->
-    <!--            <div class="warehouse-content">-->
-    <!--                <p class="address"><strong>Адрес:</strong> Красноярск, ул. Борисевича, 4К</p>-->
-    <!--                <p class="opening-hours">Часы работы: Your Opening Hours Here</p>-->
-    <!--                <img src="images/warehouse.png" alt="Warehouse Image">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <div class="warehouse-container">
+    <div id="contact" class="warehouse-container">
         <div class="title-container">
             <h2>Где мы находимся?</h2>
         </div>
         <div class="warehouse-info">
-            <!-- Flex container for the image and details -->
             <div class="warehouse-content">
-                <img src="images/warehouse.png" alt="Warehouse Image 1">
+                <img src="images/warehouse.png" alt="Warehouse Image">
                 <div class="details">
                     <p class="address"><strong>Адрес:</strong> Красноярск, ул. Борисевича, 4К. Подъезд со стороны
-                        Борисевича 4Б.
-                        <a href="https://go.2gis.com/v5uupq" target="_blank"> (Посмотреть на картe)</a></p>
+                        Борисевича 4Б. <a href="https://go.2gis.com/v5uupq" target="_blank"> (Посмотреть на карте)</a>
+                    </p>
                     <p class="opening-hours">пн-пт <strong>09:00 – 18:00</strong></p>
                     <p><strong>Телефон:</strong> +7-902-940-1743</p>
                     <p><strong>Email:</strong> vod-2018@bk.ru</p>
-
                 </div>
             </div>
         </div>
     </div>
 </main>
-
 <script src="/js/script.js"></script>
 </body>
 
