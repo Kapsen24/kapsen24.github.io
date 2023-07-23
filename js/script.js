@@ -3,11 +3,6 @@ function openSidePanel() {
     sidePanel.style.right = '0';
 }
 
-// function closeSidePanel() {
-//     const sidePanel = document.getElementById('sidePanel');
-//     sidePanel.style.right = '-300px';
-// }
-
 // Function to close the sidebar when the close button is clicked
 function closeSidePanel() {
     document.getElementById('sidePanel').style.right = '-300px';
