@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const companyLogo = document.getElementById("company-logo");
+    const companyLogo = document.querySelector("#company-logo");
 
     // Add click event listener to the company logo
     companyLogo.addEventListener("click", function (event) {
@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function openSidePanel() {
-    const sidePanel = document.getElementById('sidePanel');
+    const sidePanel = document.querySelector('#sidePanel');
     sidePanel.style.right = '0';
 }
 
 // Function to close the sidebar when the close button is clicked
 function closeSidePanel() {
-    document.getElementById('sidePanel').style.right = '-300px';
+    document.querySelector('#sidePanel').style.right = '-300px';
 }
 
 // Function to handle scrolling to the clicked section
@@ -33,7 +33,7 @@ function scrollToSection(sectionId, offset = 70) {
     closeSidePanel();
 
     // Scroll to the section with the specified ID and offset
-    const section = document.getElementById(sectionId);
+    const section = document.querySelector(`#${sectionId}`);
     if (section) {
         const offsetPosition = section.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({

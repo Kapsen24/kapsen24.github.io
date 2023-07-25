@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шины грузовые Kapsen - официальный представитель в Красноярске</title>
+    <title>Официальный представитель Kapsen в Красноярске</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- Meta Tags for Social Media -->
     <meta property="og:title" content="Официальный представитель Kapsen в Красноярске">
     <meta property="og:description" content="Продажа грузовых шин Kapsen в Красноярске от официальных представителей">
     <meta property="og:type" content="website">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
-
+<body>
 <header>
     <div class="logo">
         <img src="/images/logo-clear.png" alt="Company Logo" id="company-logo" style="cursor: pointer;">
@@ -22,14 +22,13 @@
     </div>
 </header>
 
-
 <div class="side-panel" id="sidePanel">
     <button class="close-button" onclick="closeSidePanel()">&times;</button>
     <div class="sidebar-content">
-        <h2 onclick="scrollToSection('about-us')">• О компании</h2>
-        <h2 onclick="scrollToSection('tires-without-cameras')">• Бескамерные шины</h2>
-        <h2 onclick="scrollToSection('tires-with-cameras')">• Камерные шины</h2>
-        <h2 onclick="scrollToSection('contact')">• Контакты</h2>
+        <h2 onclick="scrollToSection('about-us')">О компании</h2>
+        <h2 onclick="scrollToSection('tires-without-cameras')">Бескамерные шины</h2>
+        <h2 onclick="scrollToSection('tires-with-cameras')">Камерные шины</h2>
+        <h2 onclick="scrollToSection('contact')">Контакты</h2>
     </div>
 </div>
 
@@ -38,29 +37,31 @@
         <h1>Шины грузовые Kapsen</h1>
     </div>
 
-    <div class="warehouse-container">
+    <!-- About Us Section -->
+    <div id="about-us" class="warehouse-container">
         <div class="warehouse-info">
-            <div class="title-container" id="about-us">
+            <div class="title-container">
                 <h2>О компании</h2>
             </div>
             <div class="warehouse-content">
-                <img src="images/collage.jpg" alt="Collage Image">
+                <img src="/images/collage.jpg" alt="Collage Image">
                 <div class="details">
-                    <p style="text-align:justify"> ООО «КОМФОРТ ГРУПП» находится на российском рынке с 2005 года.
-                        Основными направлениями деятельности компании является внешнеэкономическая деятельность. Наличие
-                        опытных сотрудников и переводчиков позволяет нам
-                        оптимально осуществлять сотрудничество с партнерами из Китая. Кроме того, у нас наработаны
-                        крепкие связи с транспортными компаниями, что обеспечивает быструю и экономически выгодную
-                        логистику доставки. Мы готовы поставлять любые объемы товаров в различных ассортиментах. Для
-                        оптовых партий предусмотрены скидки.
+                    <p style="text-align:justify">
+                        ООО «Комфорт Групп» работает на российском рынке с 2005 года и
+                        специализируется на внешнеэкономической деятельности. Наша компания имеет опытных сотрудников и
+                        переводчиков, которые обеспечивают взаимовыгодное сотрудничество с партнерами из Китая. Мы также
+                        имеем большой опыт работы с транспортными компаниями, что позволяет нам обеспечить быструю и
+                        экономически выгодную логистику доставки. Мы готовы поставлять товары в любых объемах и
+                        ассортиментах, а для оптовых партий предусмотрены скидки.
                     </p>
                     <p style="text-align:justify">
                         Мы являемся официальным представителем одного из крупнейших производителей шин
-                        в Китае - Shandong Huasheng Rubber Co,, который изготавливает качественные легковые и грузовые
-                        шины с 1994 года( торговые марки «Kapsen, Taitong, Terraking и другие). Для производства
-                        используется современное и высокотехнологичное оборудование из Японии, Германии, Италии и США.
-                        В настоящее время мы предлагаем шины торговой марки «Kapsen» для грузовых
-                        автомобилей со склада в Красноярске.
+                        в Китае - Shandong Huasheng Rubber Co., который с 1994 года производит качественные легковые и
+                        грузовые шины под торговыми марками «Kapsen», «Taitong», «Terraking» и другими. Для производства
+                        используется современное и высокотехнологичное оборудование из Японии, Германии, Италии и США. В
+                        настоящее время мы предлагаем шины торговой марки «Kapsen» для грузовых автомобилей со склада в
+                        Красноярске.
+                    </p>
                     <p><strong>ООО Комфорт Групп</strong></p>
                 </div>
             </div>
@@ -312,7 +313,7 @@
         </div>
     </div>
 
-<!--    dummy containers-->
+    <!--    dummy containers-->
     <div class="tire-container phone-only" style="width: 300px; height: 200px; background-color: transparent;"></div>
     <div class="tire-container phone-only" style="width: 300px; height: 200px; background-color: transparent;"></div>
 
@@ -322,21 +323,23 @@
         </div>
         <div class="warehouse-info">
             <div class="warehouse-content">
-                <img src="images/warehouse.jpg" alt="Warehouse Image">
+                <img src="/images/warehouse.jpg" alt="Warehouse Image">
                 <div class="details">
                     <p class="address"><strong>Адрес:</strong> Красноярск, ул. Борисевича, 4К. Подъезд со стороны
                         Борисевича 4Б. <a href="https://go.2gis.com/v5uupq" target="_blank"> (Посмотреть на карте)</a>
                     </p>
                     <p class="opening-hours"><strong>Часы работы:</strong> пн-пт <strong>09:00 – 18:00</strong></p>
-                    <p><strong>Телефоны:</strong> +7-902-940-1743 (Дмитрий), +7-902-990-6189 (Сергей)</p>
-                    <p><strong>Email</strong> vod-2018@bk.ru</p>
+                    <p><strong>Телефоны:</strong>
+                    <p>+7-902-940-1743 (Дмитрий)</p>
+                    <p>+7-902-990-6189 (Сергей)</p>
+                    <p><strong>Email:</strong> vod-2018@bk.ru</p>
                     <p><strong>ООО Комфорт Групп</strong></p>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
 <script src="/js/script.js"></script>
 </body>
-
 </html>
