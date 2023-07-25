@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const companyLogo = document.getElementById("company-logo");
+
+    // Add click event listener to the company logo
+    companyLogo.addEventListener("click", function (event) {
+        event.preventDefault();
+        scrollToTop();
+    });
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+        // Smooth scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});
+
 function openSidePanel() {
     const sidePanel = document.getElementById('sidePanel');
     sidePanel.style.right = '0';
