@@ -9,6 +9,7 @@
 }
 
 /* Global styles */
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -25,6 +26,10 @@ header {
     padding: 10px;
     width: 100%; /* Make the header full-width */
     z-index: 3; /* Add a high z-index to ensure it stays on top of other elements */
+}
+
+.logo {
+    cursor: pointer;
 }
 
 .logo img {
